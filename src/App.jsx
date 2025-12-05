@@ -1,9 +1,13 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { UserLayout } from './Components/UserLayout'
 
 const App = () => {
   return (
     <div>
-      Hello World
+      <Routes>
+        <Route path='/' element={<UserLayout />}></Route>
+      </Routes>
     </div>
   )
 }
