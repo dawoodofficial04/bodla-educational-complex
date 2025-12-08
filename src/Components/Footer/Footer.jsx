@@ -5,7 +5,7 @@ import { IoMdMail } from "react-icons/io";
 
  const Footer = () => {
   return (
-    <footer className="w-full bg-[rgb(69_112_97)] text-gray-300 py-12 px-6 mt-10">
+    <footer className="w-full bg-[rgb(69_112_97)] text-gray-300 py-6 px-6 mt-10">
       <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-10">
         {/* Quick Links */}
         <div className="flex-1 min-w-[200px] flex flex-col items-center">
@@ -237,7 +237,7 @@ import { IoMdMail } from "react-icons/io";
       </div>
 
       {/* Bottom */}
-      <div className="flex justify-center items-center text-center border-t border-gray-700 mt-10 pt-6 text-xl cursor-default">
+      <div className="flex justify-center items-center text-center border-t border-gray-400 mt-10 pt-6 text-xl cursor-default">
         © Copyright 2025 Bodla Educational Complex. All Rights Reserved.
       </div>
     </footer>
