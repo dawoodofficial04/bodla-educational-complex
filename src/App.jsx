@@ -1,12 +1,13 @@
 import React from 'react'
-import {Footer} from './components/Footer'
-import Institutes from './components/Institutes/Institutes'
+import { Route, Routes } from 'react-router-dom'
+import { UserLayout } from './Components/UserLayout'
 
 const App = () => {
   return (
     <div>
-       <Institutes />
-       <Footer />
+      <Routes>
+        <Route path='/' element={<UserLayout />}></Route>
+      </Routes>
     </div>
   )
 }
