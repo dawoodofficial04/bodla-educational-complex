@@ -1,6 +1,6 @@
 import React from "react";
 
-const institutes = [
+const Logos = [
   {
     logo: "src/assets/BodlaEyeCare.png",
   },
@@ -39,4 +39,4 @@ const Institutes = () => {
   );
 };
 
-export default Institutes;
+export default Logos;

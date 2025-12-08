@@ -1,8 +1,9 @@
+
 import React from "react";
 import { FaFacebook, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
-export default function Footer() {
+ const Footer= () => {
   return (
     <footer className="w-full bg-[rgb(69_112_97)] text-gray-300 py-12 px-6 mt-10">
       <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-10">
@@ -242,3 +243,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer
