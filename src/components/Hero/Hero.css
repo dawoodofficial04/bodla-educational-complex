@@ -1,0 +1,59 @@
+/* Stroke Animations */
+.center-path {
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+  animation: drawCenter 2.8s ease-in-out infinite;
+}
+.side-path {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: drawSide 3.4s ease-in-out infinite;
+}
+
+.side-path.left {
+  animation-delay: 0.25s;
+}
+
+.side-path.right {
+  animation-delay: 0.55s;
+}
+
+@keyframes drawCenter {
+  0% {
+    stroke-dashoffset: 900;
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  45% {
+    stroke-dashoffset: 120;
+  }
+
+  100% {
+    stroke-dashoffset: -900;
+    opacity: 0;
+  }
+}
+
+@keyframes drawSide {
+  0% {
+    stroke-dashoffset: 700;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  50% {
+    stroke-dashoffset: 140;
+  }
+
+  100% {
+    stroke-dashoffset: -700;
+    opacity: 0;
+  }
+}
