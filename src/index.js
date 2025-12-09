@@ -4,5 +4,6 @@ export { default as UserLayout } from "./UserLayout"
 export { default as Header } from './Header'
 export { default as Topbar } from "./Topbar"
 export { default as Navbar } from "./Navbar"
+export {default as SocialMedia} from './SocialMedia'
 export { default as Home } from './Home'
 export { default as Hero } from './Hero'
