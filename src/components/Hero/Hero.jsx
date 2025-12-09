@@ -1,7 +1,7 @@
 // src/components/HeroSleek.jsx
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import HeroImage from "../../assets/Hero.jpg";
+import HeroImage from "../../assets/Hero.png";
 import "./Hero.css";
 
 const Hero = () => {
