@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/BodlaEducationalComplex.png";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -61,7 +61,7 @@ const Navbar = () => {
           className="flex flex-col md:flex-row items-center text-center md:text-left"
         >
           {/* Logo */}
-          <img src={Logo} alt="logo" className="h-30 w-auto object-cover" />
+          <img src={Logo} alt="logo" className="h-25 w-auto object-cover px-2 py-2" />
 
           {/* Title + Subtitle */}
           <div className="leading-tighter">
