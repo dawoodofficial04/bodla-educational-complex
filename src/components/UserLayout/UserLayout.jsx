@@ -5,7 +5,7 @@ import { Footer } from '../Footer'
 
 const UserLayout = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden max-w-screen'>
       {/* Header */}
       <Header />
       {/* Main Content */}

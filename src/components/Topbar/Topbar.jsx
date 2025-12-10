@@ -4,8 +4,8 @@ import { RiMailFill } from "react-icons/ri";
 const Topbar = () => {
   return (
     <div className="bg-[#E42127] text-white">
-      <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center px-4 py-1 space-y-2 md:space-y-0">
-        <div className="flex items-center">
+      <div className="container mx-auto flex flex-wrap flex-col md:flex-row justify-between items-center w-full px-4 py-1 space-x-0 md:space-x-4 space-y-2 md:space-y-0">
+        <div className="flex items-center text-xs lg:text-sm">
           <a
             href="mailto:becomplex11%40gmail.com?subject=&body="
             target="_blank"
@@ -16,7 +16,7 @@ const Topbar = () => {
             becomplex11@gmail.com
           </a>
         </div>
-        <div className="text-sm text-center flex-1">
+        <div className="text-xs lg:text-sm text-center flex-1">
           <span className="text-yellow-200">
             <span className="text-yellow-300 font-bold">
               BODLA EDUCATIONAL COMPLEX
@@ -24,7 +24,7 @@ const Topbar = () => {
             - The Name of Trust!
           </span>
         </div>
-        <div className="text-sm flex flex-col">
+        <div className="text-xs lg:text-sm flex flex-col">
           <a
             href="https://wa.link/0ipvm7"
             target="_blank"

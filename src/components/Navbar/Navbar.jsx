@@ -51,6 +51,7 @@ const navItems = [
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [desktopDropdown, setDesktopDropdown] = useState(null);
 
   return (
     <nav className="w-full">
@@ -61,7 +62,11 @@ const Navbar = () => {
           className="flex flex-col md:flex-row items-center text-center md:text-left"
         >
           {/* Logo */}
-          <img src={Logo} alt="logo" className="h-25 w-auto object-cover px-2 py-2" />
+          <img
+            src={Logo}
+            alt="logo"
+            className="h-25 w-auto object-cover px-2 py-2"
+          />
 
           {/* Title + Subtitle */}
           <div className="leading-tighter">
@@ -102,13 +107,16 @@ const Navbar = () => {
       </div>
 
       {/* =================== DESKTOP NAVBAR =================== */}
-      <div className="bg-[#233D63] border-b-4 border-[#8A5DA1] shadow-md">
-        <div className="max-w-7xl mx-auto flex items-center justify-center px-4 py-3">
-          {/* Desktop Menu */}
-          <ul className="hidden md:flex items-center gap-4 text-white font-medium">
+      <div className="bg-[#233D63] border-b-4 border-[#8A5DA1] shadow-md overflow-visible">
+        <div className="max-w-7xl mx-auto px-4 py-3 w-full">
+          {/* Desktop Navigation */}
+          <ul className="hidden md:flex flex-wrap items-center justify-center gap-4 text-white font-medium max-w-full">
             {navItems.map((item, i) => (
               <li key={i} className="relative group">
                 <button
+                  onClick={() =>
+                    setDesktopDropdown(desktopDropdown === i ? null : i)
+                  }
                   className={`flex items-center gap-1 px-4 py-2 rounded-md transition ${
                     item.title === "Home"
                       ? "bg-[#8A5DA1] text-white"
@@ -117,21 +125,31 @@ const Navbar = () => {
                 >
                   {item.title}
                   {item.children && (
-                    <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition" />
+                    <ChevronDown
+                      className={`w-4 h-4 transition ${
+                        desktopDropdown === i
+                          ? "rotate-180"
+                          : "group-hover:rotate-180"
+                      }`}
+                    />
                   )}
                 </button>
-
                 {/* Desktop Dropdown */}
                 {item.children && (
-                  <div className="absolute left-0 top-full hidden group-hover:block bg-white text-black w-48 rounded shadow-lg animate-fadeIn">
+                  <div
+                    className={`navbar-dropdown absolute left-0 mt-2 bg-white text-black 
+                w-48 rounded-lg shadow-lg animate-fadeIn
+                ${desktopDropdown === i ? "block" : "hidden"} 
+                group-hover:block`}
+                  >
                     {item.children.map((c, idx) => (
-                      <a
+                      <Link
                         key={idx}
-                        href={c.link}
+                        to={c.link}
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
                         {c.title}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -140,12 +158,11 @@ const Navbar = () => {
           </ul>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileOpen(true)}
-            className="md:hidden text-white"
-          >
-            <Menu size={28} />
-          </button>
+          <div className="flex justify-center md:hidden">
+            <button onClick={() => setMobileOpen(true)} className="text-white">
+              <Menu size={28} />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -197,13 +214,13 @@ const Navbar = () => {
                   }`}
                 >
                   {item.children.map((c, idx) => (
-                    <a
+                    <Link
                       key={idx}
                       href={c.link}
                       className="block pl-6 py-2 text-sm bg-[#1E3555] hover:bg-[#2b4a78]"
                     >
                       {c.title}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -216,4 +233,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
