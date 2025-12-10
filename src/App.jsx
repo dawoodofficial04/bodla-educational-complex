@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { UserLayout } from './Components/UserLayout'
+import { UserLayout } from './components/UserLayout'
 import { Home } from './components/Home'
 
 const App = () => {
