@@ -1,0 +1,25 @@
+/* Border Animations */
+@property --a {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes glow-rotate {
+  to {
+    --a: 1turn;
+  }
+}
+
+/* Sort Options */
+.intro-glowing-border {
+  --b: 3px; /* border thickness */
+  --l: #006aff, #00e1ff; /* colors of animation */
+
+  border-radius: calc(2 * var(--b));
+  padding: var(--b);
+  background: repeating-conic-gradient(from var(--a), var(--l)) border-box;
+
+  animation: glow-rotate 2s linear infinite;
+  transition: transform 0.3s;
+}
