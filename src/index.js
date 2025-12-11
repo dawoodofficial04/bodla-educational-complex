@@ -1,4 +1,4 @@
-export {default as Footer} from './Footer'
+
 export {default as Institutes} from './Institutes'
 export { default as UserLayout } from "./UserLayout"
 export { default as Header } from './Header'
