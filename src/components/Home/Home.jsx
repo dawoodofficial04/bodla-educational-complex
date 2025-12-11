@@ -9,6 +9,7 @@ const Home = () => {
       <Hero />
       <Achievements />
       <SocialMedia />
+      <Logos />
     </div>
   )
 }
