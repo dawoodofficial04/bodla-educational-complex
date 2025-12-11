@@ -1,6 +1,6 @@
 import React from "react";
 
-const Logos = [
+const logos = [
   {
     logo: "src/assets/BodlaEyeCare.png",
   },
@@ -18,25 +18,24 @@ const Logos = [
   },
 ];
 
-const Institutes = () => {
+const InstitutesLogos = () => {
   return (
     <div className="w-full py-10">
-
-      <div className="flex lg:flex-row flex-col justify-center lg:gap-28 gap-8 place-items-center">
-        {institutes.map((inst, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center"
-          >
+      <div className="flex lg:flex-row flex-col justify-center lg:gap-28 gap-8 items-center">
+        
+        {logos.map((inst, index) => (
+          <div key={index} className="flex flex-col items-center">
             <img
               src={inst.logo}
-              className="w-50 h-50 object-contain"
+              className="w-40 h-40 object-contain"
+              alt="Institute Logo"
             />
           </div>
         ))}
+
       </div>
     </div>
   );
 };
 
-export default Logos;
+export default InstitutesLogos;
