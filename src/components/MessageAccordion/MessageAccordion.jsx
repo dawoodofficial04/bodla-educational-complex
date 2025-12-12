@@ -15,7 +15,7 @@ const MessageAccordion = () => {
       {/* CEO MESSAGE ACCORDION */}
       <button
         onClick={() => toggleAccordion(1)}
-        className="bg-[#7e3f9e] text-white w-full flex gap-5 items-center px-6 py-4 text-2xl font-semibold border rounded-xl shadow"
+        className="bg-[#7e3f9e] text-white w-full flex gap-5 items-center px-6 py-4 text-2xl font-semibold border rounded-xl shadow cursor-pointer"
       >
         <span>{activeAccordion === 1 ? "-" : "+"}</span>
         <FaUserGraduate />CEO Message
@@ -29,11 +29,11 @@ const MessageAccordion = () => {
           />
 
           <div>
-            <h3 className="text-xl md:text-start text-center font-semibold mb-2">
+            <h3 className="text-xl cursor-default md:text-start text-center font-semibold mb-2">
               Peer Sanaullah Bodla
             </h3>
 
-            <p className="text-lg leading-relaxed text-gray-700">
+            <p className="text-lg cursor-default leading-relaxed text-gray-700">
             PEER SANAULLAH BODLA MEMORIAL TRUST ESTABLISHED IN 2001, IN MEMORY
             OF PEER MUHAMMAD SANAULLAH BODLA WHO WAS A FAMOUS SOCIAL ACTIVIST
             AND BELOVED POLITICAL LEADER OF THE REGION. HE PLAYED A KEY ROLE IN
@@ -55,7 +55,7 @@ const MessageAccordion = () => {
       {/* DIRECTOR MESSAGE ACCORDION */}
       <button
         onClick={() => toggleAccordion(2)}
-        className="bg-[#7e3f9e] text-white w-full flex gap-5 items-center px-6 py-4 text-2xl font-semibold border rounded-xl shadow mt-4"
+        className="bg-[#7e3f9e] text-white w-full flex gap-5 items-center px-6 py-4 lg:text-2xl font-semibold border rounded-xl shadow mt-4 cursor-pointer"
       >
         <span>{activeAccordion === 2 ? "-" : "+"}</span>
         <FaGraduationCap /> Academic Director Message
@@ -69,11 +69,11 @@ const MessageAccordion = () => {
           />
 
           <div>
-            <h3 className="text-xl md:text-start text-center font-semibold mb-2">
+            <h3 className="text-xl cursor-default md:text-start text-center font-semibold mb-2">
               Prof. Dr. Tariq Mahmood Ansari, (PhD, FCSP, FRSC)
             </h3>
 
-            <p className="text-lg leading-relaxed text-gray-700">
+            <p className="text-lg cursor-default leading-relaxed text-gray-700">
             Welcome To Bodla Education Complex, a highly recognised educational
             institute setting exemplary standards. Our quality is proven not
             only be our students who attain outstanding result during their

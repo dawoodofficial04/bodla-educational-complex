@@ -4,7 +4,7 @@ import { FaGraduationCap, FaUser } from "react-icons/fa";
 export default function Achievements() {
   const studentsTarget = 1600;
   const alumniTarget = 800;
-  const duration = 1500;
+  const duration = 3000;
 
   const [students, setStudents] = useState(0);
   const [alumni, setAlumni] = useState(0);
