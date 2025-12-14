@@ -13,7 +13,7 @@
 
 /* Sort Options */
 .intro-glowing-border {
-  --b: 3px; /* border thickness */
+  --b: 4px; /* border thickness */
   --l: #006aff, #00e1ff; /* colors of animation */
 
   border-radius: calc(2 * var(--b));
