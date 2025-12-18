@@ -7,7 +7,7 @@ const ModalWindow = () => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 px-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md px-4 transition-all">
       {/* Modal Container */}
       <div className="relative max-w-lg w-full bg-white rounded-lg overflow-hidden shadow-2xl animate-in fade-in zoom-in duration-300">
         
@@ -23,7 +23,7 @@ const ModalWindow = () => {
         {/* Admission Image */}
         <div className="w-full">
           <img 
-            src="/path-to-your-image/PGCAdmission.jpg" 
+            src="src/assets/PGCAdmission.jpg" 
             alt="Punjab Colleges Admission Fall 2025" 
             className="w-full h-auto block"
           />
