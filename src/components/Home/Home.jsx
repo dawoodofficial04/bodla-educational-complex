@@ -5,12 +5,14 @@ import { IntroSection } from '../IntroSection'
 import { Achievements } from '../Achievements'
 import { InstitutesLogos } from '../InstitutesLogos'
 import { MessageAccordion } from '../MessageAccordion'
+import { CoreValues } from '../CoreValues'
 
 const Home = () => {
   return (
     <div>
       <Hero />
       <IntroSection />
+      <CoreValues />
       <MessageAccordion/>
       <Achievements />
       <SocialMedia />
