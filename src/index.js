@@ -10,3 +10,5 @@ export { default as IntroSection } from "./IntroSection"
 export {default as Achievements} from './Achievements'
 export {default as InstitutesLogos} from './InstitutesLogos'
 export {default as MessageAccordion} from './MessageAccordion'
+export { default as ProgramGrid } from './ProgramGrid';
+export { default as About } from './About'

@@ -6,18 +6,12 @@ import "./Navbar.css";
 
 const navItems = [
   { title: "Home", link: "/" },
-  {
-    title: "About",
-    children: [
-      { title: "About College", link: "#" },
-      { title: "Mission & Vision", link: "#" },
-    ],
-  },
+  { title: "About", link: "/about" },
   {
     title: "Admission",
     children: [
-      { title: "MBBS", link: "#" },
-      { title: "BDS", link: "#" },
+      { title: "Intermediate", link: "#" },
+      { title: "Graduation", link: "#" },
     ],
   },
   {
@@ -113,27 +107,29 @@ const Navbar = () => {
           <ul className="hidden md:flex flex-wrap items-center justify-center gap-4 text-white font-medium max-w-full">
             {navItems.map((item, i) => (
               <li key={i} className="relative group">
-                <button
-                  onClick={() =>
-                    setDesktopDropdown(desktopDropdown === i ? null : i)
-                  }
-                  className={`flex items-center gap-1 px-4 py-2 rounded-md transition ${
-                    item.title === "Home"
-                      ? "bg-[#8A5DA1] text-white"
-                      : "hover:bg-[#324f7c]"
-                  }`}
-                >
-                  {item.title}
-                  {item.children && (
-                    <ChevronDown
-                      className={`w-4 h-4 transition ${
-                        desktopDropdown === i
-                          ? "rotate-180"
-                          : "group-hover:rotate-180"
-                      }`}
-                    />
-                  )}
-                </button>
+                <Link to={item.link}>
+                  <button
+                    onClick={() =>
+                      setDesktopDropdown(desktopDropdown === i ? null : i)
+                    }
+                    className={`flex items-center gap-1 px-4 py-2 rounded-md transition ${
+                      item.title === "Home"
+                        ? "bg-[#8A5DA1] text-white"
+                        : "hover:bg-[#324f7c]"
+                    }`}
+                  >
+                    {item.title}
+                    {item.children && (
+                      <ChevronDown
+                        className={`w-4 h-4 transition ${
+                          desktopDropdown === i
+                            ? "rotate-180"
+                            : "group-hover:rotate-180"
+                        }`}
+                      />
+                    )}
+                  </button>
+                </Link>
                 {/* Desktop Dropdown */}
                 {item.children && (
                   <div
@@ -146,7 +142,7 @@ const Navbar = () => {
                       <Link
                         key={idx}
                         to={c.link}
-                        className="block px-4 py-2 hover:bg-gray-100"
+                        className="block px-4 py-2 hover:bg-[#2b4a78] hover:text-white"
                       >
                         {c.title}
                       </Link>
@@ -192,19 +188,29 @@ const Navbar = () => {
         <ul className="p-2">
           {navItems.map((item, i) => (
             <li key={i} className="border-b border-white/10">
-              <button
-                onClick={() => setOpenDropdown(openDropdown === i ? null : i)}
-                className="w-full flex justify-between items-center py-3 px-3"
-              >
-                {item.title}
-                {item.children && (
-                  <ChevronDown
-                    className={`transition ${
-                      openDropdown === i ? "rotate-180" : ""
-                    }`}
-                  />
-                )}
-              </button>
+              <Link to={item.link}>
+                <button
+                  onClick={(e) => {
+                    if (item.children) {
+                      e.preventDefault();
+                    }
+                    setOpenDropdown(openDropdown === i ? null : i);
+                    if (!item.children) {
+                      setMobileOpen(false);
+                    }
+                  }}
+                  className="w-full flex justify-between items-center py-3 px-3"
+                >
+                  {item.title}
+                  {item.children && (
+                    <ChevronDown
+                      className={`transition ${
+                        openDropdown === i ? "rotate-180" : ""
+                      }`}
+                    />
+                  )}
+                </button>
+              </Link>
 
               {/* Mobile Dropdown */}
               {item.children && (
@@ -212,6 +218,7 @@ const Navbar = () => {
                   className={`overflow-hidden transition-all ${
                     openDropdown === i ? "max-h-40" : "max-h-0"
                   }`}
+                  onClick={() => setMobileOpen(false)}
                 >
                   {item.children.map((c, idx) => (
                     <Link
