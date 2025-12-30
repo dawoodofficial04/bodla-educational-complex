@@ -44,7 +44,7 @@ const navItems = [
       { title: "Events", link: "#" },
     ],
   },
-  { title: "Contact", link: "#" },
+  { title: "Contact", link: "/contact" },
   { title: "Careers", link: "#" },
 ];
 
@@ -113,27 +113,29 @@ const Navbar = () => {
           <ul className="hidden md:flex flex-wrap items-center justify-center gap-4 text-white font-medium max-w-full">
             {navItems.map((item, i) => (
               <li key={i} className="relative group">
-                <button
-                  onClick={() =>
-                    setDesktopDropdown(desktopDropdown === i ? null : i)
-                  }
-                  className={`flex items-center gap-1 px-4 py-2 rounded-md transition ${
-                    item.title === "Home"
-                      ? "bg-[#8A5DA1] text-white"
-                      : "hover:bg-[#324f7c]"
-                  }`}
-                >
-                  {item.title}
-                  {item.children && (
-                    <ChevronDown
-                      className={`w-4 h-4 transition ${
-                        desktopDropdown === i
-                          ? "rotate-180"
-                          : "group-hover:rotate-180"
-                      }`}
-                    />
-                  )}
-                </button>
+                <Link to={item.link}>
+                  <button
+                    onClick={() =>
+                      setDesktopDropdown(desktopDropdown === i ? null : i)
+                    }
+                    className={`flex items-center gap-1 px-4 py-2 rounded-md transition ${
+                      item.title === "Home"
+                        ? "bg-[#8A5DA1] text-white"
+                        : "hover:bg-[#324f7c]"
+                    }`}
+                  >
+                    {item.title}
+                    {item.children && (
+                      <ChevronDown
+                        className={`w-4 h-4 transition ${
+                          desktopDropdown === i
+                            ? "rotate-180"
+                            : "group-hover:rotate-180"
+                        }`}
+                      />
+                    )}
+                  </button>
+                </Link>
                 {/* Desktop Dropdown */}
                 {item.children && (
                   <div

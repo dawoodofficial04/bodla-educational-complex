@@ -238,7 +238,7 @@ import { IoMdMail } from "react-icons/io";
 
       {/* Bottom */}
       <div className="flex justify-center items-center text-center border-t border-gray-400 mt-10 pt-6 text-xl cursor-default">
-        © Copyright 2025 Bodla Educational Complex. All Rights Reserved.
+        &copy; Copyright 2025 Bodla Educational Complex. All Rights Reserved.
       </div>
     </footer>
   );

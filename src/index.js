@@ -5,6 +5,7 @@ export { default as Topbar } from "./Topbar"
 export { default as Navbar } from "./Navbar"
 export { default as SocialMedia } from './SocialMedia'
 export { default as Home } from './Home'
+export { default as Contact } from "./Contact"
 export { default as Hero } from './Hero'
 export { default as IntroSection } from "./IntroSection"
 export {default as Achievements} from './Achievements'
