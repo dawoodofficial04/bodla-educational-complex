@@ -13,3 +13,5 @@ export {default as InstitutesLogos} from './InstitutesLogos'
 export {default as MessageAccordion} from './MessageAccordion'
 export {default as CoreValues} from './CoreValues';
 export { default as ModalWindow } from "./ModalWindow"
+export { default as ProgramGrid } from './ProgramGrid';
+export { default as About } from './About'

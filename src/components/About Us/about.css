@@ -12,7 +12,7 @@
 }
 
 /* Sort Options */
-.intro-glowing-border {
+.about-glowing-border {
   --b: 4px; /* border thickness */
   --l: #006aff, #00e1ff; /* colors of animation */
 
@@ -21,5 +21,4 @@
   background: repeating-conic-gradient(from var(--a), var(--l)) border-box;
 
   animation: glow-rotate 2s linear infinite;
-  transition: transform 0.3s;
 }

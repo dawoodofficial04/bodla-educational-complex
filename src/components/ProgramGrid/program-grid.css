@@ -11,10 +11,10 @@
   }
 }
 
-/* Sort Options */
-.intro-glowing-border {
-  --b: 4px; /* border thickness */
-  --l: #006aff, #00e1ff; /* colors of animation */
+/* Program Grid */
+.pro-glowing-border {
+  --b: 6px; /* border thickness */
+  --l: #ff4545, #00ff99, #006aff, #ff0095, #ff4545; /* colors of animation */
 
   border-radius: calc(2 * var(--b));
   padding: var(--b);
@@ -22,4 +22,8 @@
 
   animation: glow-rotate 2s linear infinite;
   transition: transform 0.3s;
+}
+
+.pro-glowing-border:hover {
+  transform: scale(1.05);
 }

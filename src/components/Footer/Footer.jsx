@@ -14,7 +14,7 @@ import { IoMdMail } from "react-icons/io";
           </h3>
           <ul className="text-lg list-none">
             <li className="before:content-['»'] before:mr-2 before:text-amber-400">
-              <a href="#" className="hover:text-white">
+              <a href="/about" className="hover:text-white">
                 About Us
               </a>
             </li>
