@@ -11,7 +11,7 @@ const CoreValues = () => {
   <div className="grow border-3 rounded-xl border-t border-[#7E3F9E]"></div>
 
   {/* Text */}
-  <span className="flex items-center gap-2 whitespace-nowrap">
+  <span className="flex items-center gap-2 text-2xl md:text-4xl whitespace-nowrap">
     <FaGem />
     Our Core Values
   </span>

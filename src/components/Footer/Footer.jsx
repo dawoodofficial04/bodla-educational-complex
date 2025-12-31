@@ -2,6 +2,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { Link } from "react-router-dom";
 
  const Footer = () => {
   return (
@@ -14,14 +15,19 @@ import { IoMdMail } from "react-icons/io";
           </h3>
           <ul className="text-lg list-none">
             <li className="before:content-['»'] before:mr-2 before:text-amber-400">
-              <a href="/about" className="hover:text-white">
-                About Us
-              </a>
+              <Link to="/" className="hover:text-white">
+                Home
+              </Link>
             </li>
             <li className="before:content-['»'] before:mr-2 before:text-amber-400">
-              <a href="#" className="hover:text-white">
+              <Link to="/about" className="hover:text-white">
+                About Us
+              </Link>
+            </li>
+            <li className="before:content-['»'] before:mr-2 before:text-amber-400">
+              <Link to="/contact" className="hover:text-white">
                 Contact Us
-              </a>
+              </Link>
             </li>
             <li className="before:content-['»'] before:mr-2 before:text-amber-400">
               <a href="#" className="hover:text-white">

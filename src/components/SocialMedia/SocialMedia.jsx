@@ -15,12 +15,12 @@ export default function SocialMedia() {
 
   return (
     <div>
-      <h4 className="flex items-center mt-5 gap-4 text-2xl text-[#8A5DA1] md:text-3xl font-semibold mb-4 w-full max-w-6xl mx-auto">
+      <h4 className="flex items-center mt-20 gap-4 text-2xl text-[#8A5DA1] md:text-3xl font-semibold mb-4 w-full max-w-6xl mx-auto">
         {/* Left Line */}
         <div className="grow border-3 rounded-xl border-t border-[#7E3F9E]"></div>
 
         {/* Text */}
-        <span className="flex items-center gap-2 whitespace-nowrap">
+        <span className="flex items-center gap-2 text-2xl md:text-4xl whitespace-nowrap">
           <SiOpenmediavault />
           Our Social Media
         </span>

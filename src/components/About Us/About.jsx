@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import RIAHS from "../../assets/RIAHS.jpg";
-import "./about.css"
-import { InstitutesLogos } from '../InstitutesLogos';
+import "./about.css";
+import { InstitutesLogos } from "../InstitutesLogos";
 
 const features = [
   { icon: "🏫", title: "A+ Category\nRecognition" },
@@ -158,11 +158,19 @@ const About = () => {
           <span className="font-semibold">'Bodla Educational Complex'</span>{" "}
           running under the supervision of Pro. Dr. M Afzal Bodla with four
           registered institutions while providing quality education. 'Largest
-          educational Complex in Mian Channu'. Our mission is to achieve the
-          highest standards in providing education and health services to the
-          public by promoting their educational and health safety and aims for a
-          diverse population of students of this region to compete and succeed
-          in a real world.
+          Educational Complex in Mian Channu' 'Established in 2001, in memory of
+          Peer Muhammad Sanaullahah Bodla, who was a famous social activist and
+          beloved political leader of the region'. He played a key role in
+          educational, social, and economic development of District Khanewal.
+          BODLA Educational Complex aims at achieving Peer Muhammad Sanaullahah
+          Bodla's dream of serving denizens through providing quality education
+          in the field of general and health sciences. BEC is not merely an
+          educational institute, but also provides health facilities to rural
+          population by establishing free health camps. It also helps students
+          in their career building and achieving life goals. The trust is meant
+          to help needy students to complete their education not only at
+          secondary level but also for their post-graduation at different
+          medical institutions.
         </p>
 
         <p className="bg-blue-100 hover:bg-blue-300 active:bg-blue-300 p-2 rounded-lg shadow-lg hover:shadow-2xl active:shadow-2xl hover:scale-105 active:scale-105 transition-transform-all duration-200 lg:duration-500">
@@ -241,12 +249,21 @@ const About = () => {
       {/* Affiliation Content */}
       <div className="w-[90%] md:w-[80%] lg:w-[70%] text-center mx-auto px-6 py-6 space-y-6 text-gray-700 text-[15px] md:text-[20px] leading-normal">
         <p className="bg-blue-100 hover:bg-blue-300 active:bg-blue-300 font-semibold p-2 rounded-lg shadow-lg hover:shadow-2xl active:shadow-2xl hover:scale-105 active:scale-105 transition-transform-all duration-200 lg:duration-500">
-          We are proudly affiliated with the following Pakistan's best universities:
+          We are proudly affiliated with the following Pakistan's best
+          universities:
           <br />
           <ul className="max-w-7xl mx-auto flex flex-wrap justify-evenly gap-10 p-10 text-2xl md:text-3xl text-blue-900">
-            <li>University of <br />Central Punjab</li>
-            <li>Bahauddin Zakariya <br />University</li>
-            <li>Islamia University <br /> of Bahawalpur</li>
+            <li>
+              University of <br />
+              Central Punjab
+            </li>
+            <li>
+              Bahauddin Zakariya <br />
+              University
+            </li>
+            <li>
+              Islamia University <br /> of Bahawalpur
+            </li>
           </ul>
         </p>
       </div>
@@ -260,33 +277,34 @@ const About = () => {
 
       {/* Choose Content */}
       <div className="w-[80%] md:w-full mx-auto px-4 py-10">
-      <div className="max-w-6xl mx-auto grid gap-6 
+        <div
+          className="max-w-6xl mx-auto grid gap-6 
         grid-cols-1 
         sm:grid-cols-2 
         md:grid-cols-3 
         lg:grid-cols-4"
-      >
-        {features.map((item, index) => (
-          <div
-            key={index}
-            className="about-glowing-border flex flex-col items-center justify-center
+        >
+          {features.map((item, index) => (
+            <div
+              key={index}
+              className="about-glowing-border flex flex-col items-center justify-center
               text-center min-h-[200px]
               rounded-2xl border-6 border-[#8E44AD]
               shadow-[0_8px_20px_rgba(0,0,0,0.15)]
               px-6 py-6 p-2 hover:shadow-2xl active:shadow-2xl hover:scale-110 active:scale-110 transition-transform-all duration-200 lg:duration-500"
-          >
-            <span className="text-3xl mb-4">{item.icon}</span>
+            >
+              <span className="text-3xl mb-4">{item.icon}</span>
 
-            <p className="text-[#69188d] text-2xl font-bold leading-snug whitespace-pre-line pb-4">
-              {item.title}
-            </p>
-          </div>
-        ))}
+              <p className="text-[#69188d] text-2xl font-bold leading-snug whitespace-pre-line pb-4">
+                {item.title}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
 
-    {/* Logos */}
-    <InstitutesLogos />
+      {/* Logos */}
+      <InstitutesLogos />
     </section>
   );
 };

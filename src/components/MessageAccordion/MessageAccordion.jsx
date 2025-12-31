@@ -34,19 +34,18 @@ const MessageAccordion = () => {
             </h3>
 
             <p className="text-lg cursor-default leading-relaxed text-gray-700">
-            PEER SANAULLAH BODLA MEMORIAL TRUST ESTABLISHED IN 2001, IN MEMORY
-            OF PEER MUHAMMAD SANAULLAH BODLA WHO WAS A FAMOUS SOCIAL ACTIVIST
-            AND BELOVED POLITICAL LEADER OF THE REGION. HE PLAYED A KEY ROLE IN
-            EDUCATIONAL, SOCIAL AND ECONOMIX DEVELOPMENT OF DISTRICT KHANEWAL
-            BODLA EDUCATIONAL COMPLEX AIMS AT ACHIEVING PEER MUHAMMAD SANAULLAH
-            BODLA DREAM OF SERVING DENIZENS THROUGH PROVIDING QUALITY EDUCATION
-            IN THE FIELD OF GENERAL AND HEALTH SCIENCES.BEC IS NOT MERELY AN
-            EDUCATIONAL INSTITUTE, BUT ALSO PROVIDES HEALTH FACILITIES TO RURAL
-            POPULATION BY ESTABLISHING FREE HEALTH CAMPUS. IT ALSO HELPS
-            STUDENTS IN THEIR CAREER BUILDING AND ACHIEVING LIFE GOAL. TRUST IS
-            MEANT TO HELP NEEDY STUDENTS TO COMPLETE THEIR EDUCATION NOT ONLY AT
-            SECONDARY LEVEL BUT ALSO FOR THEIR POST GRADUATION AT DIFFERENT
-            MEDICAL
+            PEER SANAULLAH BODLA MEMORIAL TRUST ESTABLISHED IN 2001, in memory
+            of Peer Muhammad Sanaullahah Bodla, who was a famous social activist and
+            beloved political leader of the region. He played a key role in
+            educational, social, and economic development of District Khanewal.
+            BODLA Educational Complex aims at achieving Peer Muhammad Sanaullahah
+            Bodla's dream of serving denizens through providing quality education in the
+            field of general and health sciences. BEC is not merely an educational
+            institute, but also provides health facilities to rural population by
+            establishing free health camps. It also helps students in their career building and
+            achieving life goals. The trust is meant to help needy students to complete their
+            education not only at secondary level but also for their post-graduation at
+            different medical institutions.
             </p>
           </div>
         </div>
@@ -80,7 +79,7 @@ const MessageAccordion = () => {
             intermediate studies but also by our esteemed group of graduates who
             have achieved great success beyond their years at PGC and have made
             us immensely proud. This is made possible through the efforts of our
-            highly trained teachers whose aim To mature the potential of each
+            highly trained teachers whose aim to mature the potential of each
             student by providing individual assistancy to equip them with skills
             that remain with them throughout their lives. An extensive range of
             academic, athletics and social activities are also, allowing for a
