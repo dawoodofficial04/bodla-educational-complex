@@ -112,7 +112,7 @@ const Navbar = () => {
                     onClick={() =>
                       setDesktopDropdown(desktopDropdown === i ? null : i)
                     }
-                    className={`flex items-center gap-1 px-4 py-2 rounded-md transition ${
+                    className={`flex items-center gap-1 px-4 py-2 rounded-md cursor-pointer transition ${
                       item.title === "Home"
                         ? "bg-[#8A5DA1] text-white"
                         : "hover:bg-[#324f7c]"

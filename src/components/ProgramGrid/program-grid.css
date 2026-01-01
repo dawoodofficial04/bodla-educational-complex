@@ -21,9 +21,4 @@
   background: repeating-conic-gradient(from var(--a), var(--l)) border-box;
 
   animation: glow-rotate 2s linear infinite;
-  transition: transform 0.3s;
-}
-
-.pro-glowing-border:hover {
-  transform: scale(1.05);
 }
