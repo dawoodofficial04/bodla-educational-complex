@@ -8,10 +8,11 @@ const navItems = [
   { title: "Home", link: "/" },
   { title: "About", link: "/about" },
   {
-    title: "Admission",
+    title: "Programs",
     children: [
-      { title: "Intermediate", link: "#" },
-      { title: "Graduation", link: "#" },
+      { title: "Intermediate", link: "/intermediate-programs" },
+      { title: "Graduation", link: "/graduation-programs" },
+      { title: "Nexskill", link: "/nexskill-programs" },
     ],
   },
   {
@@ -23,15 +24,6 @@ const navItems = [
   },
   { title: "Alumni", link: "#" },
   {
-    title: "Institutes",
-    children: [
-      { title: "Punjab Group of Colleges", link: "#" },
-      { title: "Regional Institute of Allied Health Sciences", link: "#" },
-      { title: "Nexskill", link: "#" },
-      { title: "Bodla Eye Care", link: "#" },
-    ],
-  },
-  {
     title: "Campus Life",
     children: [
       { title: "Societies", link: "#" },
@@ -39,7 +31,6 @@ const navItems = [
     ],
   },
   { title: "Contact", link: "/contact" },
-  { title: "Careers", link: "#" },
 ];
 
 const Navbar = () => {
@@ -104,7 +95,7 @@ const Navbar = () => {
       <div className="bg-[#233D63] border-b-4 border-[#8A5DA1] shadow-md overflow-visible">
         <div className="max-w-7xl mx-auto px-4 py-3 w-full">
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex flex-wrap items-center justify-center gap-4 text-white font-medium max-w-full">
+          <ul className="hidden md:flex flex-wrap items-center justify-center gap-0 xl:gap-4 text-white font-medium max-w-full">
             {navItems.map((item, i) => (
               <li key={i} className="relative group">
                 <Link to={item.link}>
@@ -223,7 +214,7 @@ const Navbar = () => {
                   {item.children.map((c, idx) => (
                     <Link
                       key={idx}
-                      href={c.link}
+                      to={c.link}
                       className="block pl-6 py-2 text-sm bg-[#1E3555] hover:bg-[#2b4a78]"
                     >
                       {c.title}

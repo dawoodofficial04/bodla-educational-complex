@@ -8,10 +8,14 @@ export { default as Home } from './Home'
 export { default as Contact } from "./Contact"
 export { default as Hero } from './Hero'
 export { default as IntroSection } from "./IntroSection"
-export {default as Achievements} from './Achievements'
-export {default as InstitutesLogos} from './InstitutesLogos'
-export {default as MessageAccordion} from './MessageAccordion'
-export {default as CoreValues} from './CoreValues';
+export { default as Achievements } from './Achievements'
+export { default as InstitutesLogos } from './InstitutesLogos'
+export { default as MessageAccordion } from './MessageAccordion'
+export { default as CoreValues } from './CoreValues';
 export { default as ModalWindow } from "./ModalWindow"
 export { default as ProgramGrid } from './ProgramGrid';
 export { default as About } from './About'
+export { default as ProgramsOffer } from './ProgramsOffer.jsx';
+export { default as IntermediatePrograms } from './IntermediatePrograms.jsx';
+export { default as GraduationPrograms } from './GraduationPrograms'
+export { default as NexskillPrograms } from './NexskillPrograms'
