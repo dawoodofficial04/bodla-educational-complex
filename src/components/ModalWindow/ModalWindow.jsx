@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
+import pgcAdmissionImg from '../../assets/PGCAdmission.jpg';
 
 const ModalWindow = () => {
   const [isOpen, setIsOpen] = useState(true);
 
-  // Agar modal close kar diya jaye to kuch bhi nazar nahi ayega
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md px-4 transition-all">
-      {/* Modal Container */}
       <div className="relative max-w-lg w-full bg-white rounded-lg overflow-hidden shadow-2xl animate-in fade-in zoom-in duration-300">
         
-        {/* Close Button (Top Right Cross) */}
         <button 
           onClick={() => setIsOpen(false)}
           className="absolute top-2 right-2 z-10 bg-red-600 text-white w-8 h-8 flex items-center justify-center rounded-sm hover:bg-red-700 transition-colors shadow-md"
@@ -20,10 +18,9 @@ const ModalWindow = () => {
           <span className="text-xl font-bold">×</span>
         </button>
 
-        {/* Admission Image */}
         <div className="w-full">
           <img 
-            src="src/assets/PGCAdmission.jpg" 
+            src={pgcAdmissionImg}
             alt="Punjab Colleges Admission Fall 2025" 
             className="w-full h-auto block"
           />

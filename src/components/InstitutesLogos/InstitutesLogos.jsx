@@ -1,21 +1,15 @@
-import React from "react";
+import BodlaEyeCare from "../../assets/BodlaEyeCare.png";
+import Nexskill from "../../assets/Nexskill.png";
+import BodlaEducationalComplex from "../../assets/BodlaEducationalComplex.png";
+import PunjabCollege from "../../assets/PunjabCollege.png";
+import RIAHSE from "../../assets/RIAHSE.png";
 
 const logos = [
-  {
-    logo: "src/assets/BodlaEyeCare.png",
-  },
-  {
-    logo: "src/assets/Nexskill.png",
-  },
-  {
-    logo: "src/assets/BodlaEducationalComplex.png",
-  },
-  {
-    logo: "src/assets/PunjabCollege.png",
-  },
-  {
-    logo: "src/assets/RIAHSE.png",
-  },
+  { logo: BodlaEyeCare },
+  { logo: Nexskill },
+  { logo: BodlaEducationalComplex },
+  { logo: PunjabCollege },
+  { logo: RIAHSE },
 ];
 
 const InstitutesLogos = () => {
