@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ProgramGrid } from "../ProgramGrid";
 import interProgramsImg2 from "../../assets/inter-regular-programs2.jpg";
-import fscEngineeringImage from "../../assets/FSc-pre-engineering.jpg";
-import fscMedicalImage from "../../assets/FSc-pre-medical.jpg";
+import fscEngineeringImage from "../../assets/Fsc-pre-engineering.jpg";
+import fscMedicalImage from "../../assets/Fsc-pre-medical.jpg";
 import icsImage from "../../assets/Ics.jpg";
 import icomImage from "../../assets/Icom.jpg";
 
